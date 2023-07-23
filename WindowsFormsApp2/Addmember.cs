@@ -10,19 +10,24 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class MainFrom : Form
+    public partial class Addmember : Form
     {
-        public MainFrom()
+        public Addmember()
         {
             InitializeComponent();
         }
 
-        private void bunifuThinButton24_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        private void bunifuMaterialTextbox2_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuMaterialTextbox3_OnValueChanged(object sender, EventArgs e)
         {
 
         }
