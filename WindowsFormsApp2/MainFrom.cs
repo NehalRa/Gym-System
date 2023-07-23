@@ -24,6 +24,9 @@ namespace WindowsFormsApp2
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
+            Addmember admember = new Addmember();
+            admember.Show();
+            this.Hide();
 
         }
     }

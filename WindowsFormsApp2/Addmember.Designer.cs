@@ -32,23 +32,24 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.mbname = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.phone = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label7 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.aget = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.gender = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.Amount = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.timing = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -95,24 +96,24 @@
             this.label4.Text = "X";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // bunifuMaterialTextbox1
+            // mbname
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.Red;
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Indigo;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.MediumBlue;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.MediumVioletRed;
-            this.bunifuMaterialTextbox1.LineThickness = 4;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(4, 130);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(148, 41);
-            this.bunifuMaterialTextbox1.TabIndex = 6;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.mbname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.mbname.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mbname.ForeColor = System.Drawing.Color.Red;
+            this.mbname.HintForeColor = System.Drawing.Color.Empty;
+            this.mbname.HintText = "";
+            this.mbname.isPassword = false;
+            this.mbname.LineFocusedColor = System.Drawing.Color.Indigo;
+            this.mbname.LineIdleColor = System.Drawing.Color.MediumBlue;
+            this.mbname.LineMouseHoverColor = System.Drawing.Color.MediumVioletRed;
+            this.mbname.LineThickness = 4;
+            this.mbname.Location = new System.Drawing.Point(4, 130);
+            this.mbname.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.mbname.Name = "mbname";
+            this.mbname.Size = new System.Drawing.Size(148, 41);
+            this.mbname.TabIndex = 6;
+            this.mbname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label5
             // 
@@ -136,25 +137,24 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Phone Number";
             // 
-            // bunifuMaterialTextbox2
+            // phone
             // 
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.Red;
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox2.HintText = "";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.Indigo;
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.MediumBlue;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.MediumVioletRed;
-            this.bunifuMaterialTextbox2.LineThickness = 4;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(210, 130);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(148, 41);
-            this.bunifuMaterialTextbox2.TabIndex = 9;
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuMaterialTextbox2.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox2_OnValueChanged);
+            this.phone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.phone.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phone.ForeColor = System.Drawing.Color.Red;
+            this.phone.HintForeColor = System.Drawing.Color.Empty;
+            this.phone.HintText = "";
+            this.phone.isPassword = false;
+            this.phone.LineFocusedColor = System.Drawing.Color.Indigo;
+            this.phone.LineIdleColor = System.Drawing.Color.MediumBlue;
+            this.phone.LineMouseHoverColor = System.Drawing.Color.MediumVioletRed;
+            this.phone.LineThickness = 4;
+            this.phone.Location = new System.Drawing.Point(210, 130);
+            this.phone.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.phone.Name = "phone";
+            this.phone.Size = new System.Drawing.Size(148, 41);
+            this.phone.TabIndex = 9;
+            this.phone.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label7
             // 
@@ -167,25 +167,24 @@
             this.label7.TabIndex = 10;
             this.label7.Text = "Age";
             // 
-            // bunifuMaterialTextbox3
+            // aget
             // 
-            this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.Red;
-            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox3.HintText = "";
-            this.bunifuMaterialTextbox3.isPassword = false;
-            this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.Indigo;
-            this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.MediumBlue;
-            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.MediumVioletRed;
-            this.bunifuMaterialTextbox3.LineThickness = 4;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(409, 130);
-            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
-            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(148, 41);
-            this.bunifuMaterialTextbox3.TabIndex = 11;
-            this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuMaterialTextbox3.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox3_OnValueChanged);
+            this.aget.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.aget.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aget.ForeColor = System.Drawing.Color.Red;
+            this.aget.HintForeColor = System.Drawing.Color.Empty;
+            this.aget.HintText = "";
+            this.aget.isPassword = false;
+            this.aget.LineFocusedColor = System.Drawing.Color.Indigo;
+            this.aget.LineIdleColor = System.Drawing.Color.MediumBlue;
+            this.aget.LineMouseHoverColor = System.Drawing.Color.MediumVioletRed;
+            this.aget.LineThickness = 4;
+            this.aget.Location = new System.Drawing.Point(409, 130);
+            this.aget.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.aget.Name = "aget";
+            this.aget.Size = new System.Drawing.Size(148, 41);
+            this.aget.TabIndex = 11;
+            this.aget.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label8
             // 
@@ -198,18 +197,18 @@
             this.label8.TabIndex = 12;
             this.label8.Text = "Gender";
             // 
-            // comboBox1
+            // gender
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gender.FormattingEnabled = true;
+            this.gender.Items.AddRange(new object[] {
             "Male",
             "Female",
             "Others"});
-            this.comboBox1.Location = new System.Drawing.Point(12, 265);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(148, 28);
-            this.comboBox1.TabIndex = 13;
+            this.gender.Location = new System.Drawing.Point(12, 265);
+            this.gender.Name = "gender";
+            this.gender.Size = new System.Drawing.Size(148, 28);
+            this.gender.TabIndex = 13;
             // 
             // label9
             // 
@@ -222,24 +221,24 @@
             this.label9.TabIndex = 14;
             this.label9.Text = "Monthly Amount";
             // 
-            // bunifuMaterialTextbox4
+            // Amount
             // 
-            this.bunifuMaterialTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox4.ForeColor = System.Drawing.Color.Red;
-            this.bunifuMaterialTextbox4.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox4.HintText = "";
-            this.bunifuMaterialTextbox4.isPassword = false;
-            this.bunifuMaterialTextbox4.LineFocusedColor = System.Drawing.Color.Indigo;
-            this.bunifuMaterialTextbox4.LineIdleColor = System.Drawing.Color.MediumBlue;
-            this.bunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.MediumVioletRed;
-            this.bunifuMaterialTextbox4.LineThickness = 4;
-            this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(210, 245);
-            this.bunifuMaterialTextbox4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.bunifuMaterialTextbox4.Name = "bunifuMaterialTextbox4";
-            this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(148, 41);
-            this.bunifuMaterialTextbox4.TabIndex = 15;
-            this.bunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Amount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Amount.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Amount.ForeColor = System.Drawing.Color.Red;
+            this.Amount.HintForeColor = System.Drawing.Color.Empty;
+            this.Amount.HintText = "";
+            this.Amount.isPassword = false;
+            this.Amount.LineFocusedColor = System.Drawing.Color.Indigo;
+            this.Amount.LineIdleColor = System.Drawing.Color.MediumBlue;
+            this.Amount.LineMouseHoverColor = System.Drawing.Color.MediumVioletRed;
+            this.Amount.LineThickness = 4;
+            this.Amount.Location = new System.Drawing.Point(210, 245);
+            this.Amount.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Amount.Name = "Amount";
+            this.Amount.Size = new System.Drawing.Size(148, 41);
+            this.Amount.TabIndex = 15;
+            this.Amount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label10
             // 
@@ -252,50 +251,52 @@
             this.label10.TabIndex = 16;
             this.label10.Text = "Timing";
             // 
-            // comboBox2
+            // timing
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.timing.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timing.FormattingEnabled = true;
+            this.timing.Items.AddRange(new object[] {
             "6Am-8Am",
             "8Am-10Am",
             "6Pm-8Pm",
             "8Pm-10Pm"});
-            this.comboBox2.Location = new System.Drawing.Point(409, 265);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(148, 28);
-            this.comboBox2.TabIndex = 17;
+            this.timing.Location = new System.Drawing.Point(409, 265);
+            this.timing.Name = "timing";
+            this.timing.Size = new System.Drawing.Size(148, 28);
+            this.timing.TabIndex = 17;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(114, 348);
+            this.button1.Location = new System.Drawing.Point(108, 321);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 30);
             this.button1.TabIndex = 18;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Red;
             this.button2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(242, 348);
+            this.button2.Location = new System.Drawing.Point(198, 321);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(84, 30);
             this.button2.TabIndex = 19;
             this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Red;
             this.button3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(367, 348);
+            this.button3.Location = new System.Drawing.Point(288, 321);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(84, 30);
             this.button3.TabIndex = 20;
@@ -307,7 +308,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.IndianRed;
-            this.label11.Location = new System.Drawing.Point(156, 403);
+            this.label11.Location = new System.Drawing.Point(189, 415);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(169, 16);
             this.label11.TabIndex = 21;
@@ -324,29 +325,43 @@
             this.label12.TabIndex = 22;
             this.label12.Text = "Contact: nehalrajput1710@gmail.com";
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Red;
+            this.button4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(192, 371);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(84, 30);
+            this.button4.TabIndex = 23;
+            this.button4.Text = "Back";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Addmember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(619, 480);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.timing);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.bunifuMaterialTextbox4);
+            this.Controls.Add(this.Amount);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.gender);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.bunifuMaterialTextbox3);
+            this.Controls.Add(this.aget);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.bunifuMaterialTextbox2);
+            this.Controls.Add(this.phone);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
+            this.Controls.Add(this.mbname);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -355,6 +370,7 @@
             this.Name = "Addmember";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Addmember";
+            this.Load += new System.EventHandler(this.Addmember_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -366,22 +382,23 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox mbname;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox phone;
         private System.Windows.Forms.Label label7;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox aget;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox gender;
         private System.Windows.Forms.Label label9;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox4;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox Amount;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox timing;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button4;
     }
 }
