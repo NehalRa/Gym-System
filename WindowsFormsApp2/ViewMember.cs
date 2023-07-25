@@ -44,5 +44,13 @@ namespace WindowsFormsApp2
             populate();
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            login log = new login();
+            log.Show();
+            this.Hide();
+
+        }
     }
 }
