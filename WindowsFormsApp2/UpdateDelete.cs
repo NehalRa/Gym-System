@@ -56,5 +56,95 @@ namespace WindowsFormsApp2
             populate();
 
         }
+        int key=0;
+
+        private void MemberSDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            key = Convert.ToInt32(MemberSDGV.SelectedRows[0].Cells[0].Value.ToString());
+            Nametb.Text = MemberSDGV.SelectedRows[0].Cells[1].Value.ToString();
+            phonetb.Text = MemberSDGV.SelectedRows[0].Cells[2].Value.ToString();
+            Gendercb.Text = MemberSDGV.SelectedRows[0].Cells[3].Value.ToString();
+            Timingcb.Text = MemberSDGV.SelectedRows[0].Cells[4].Value.ToString();
+            Amnttb.Text = MemberSDGV.SelectedRows[0].Cells[5].Value.ToString();
+            Agetb.Text = MemberSDGV.SelectedRows[0].Cells[6].Value.ToString();
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Nametb.Text = "";
+            phonetb.Text = "";
+            Agetb.Text = "";
+            Gendercb.Text = "";
+            Timingcb.Text = "";
+            Amnttb.Text = "";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            login log = new login();
+            log.Show();
+            log.Hide();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if(key== 0)
+            {
+                MessageBox.Show("Select The Member to Be Deleted");
+
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    String query = "delete from Membertbl where MID=" + key + ";";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Member Deleted Succesfully");
+                    con.Close();
+                    populate();
+
+
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+
+                }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (key == 0 || Nametb.Text== "" || phonetb.Text== "" || Agetb.Text== "" || Timingcb.Text== ""|| Gendercb.Text== "" || Amnttb.Text== "" )
+            {
+                MessageBox.Show("Missing Information");
+
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    String query = "updatee Membertbl set MName = '" + Nametb.Text + "',MPhone = '" + phonetb.Text + "',MGen = '"+Gendercb.Text+"',MAge = '"+Agetb.Text + "',MAmount = '" +Amnttb.Text+"',MTiming ='"+Timingcb.Text+"'where MID = "+key+";";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Member Deleted Succesfully");
+                    con.Close();
+                    populate();
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+
+                }
+            }
+        }
     }
 }
