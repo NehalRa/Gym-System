@@ -64,9 +64,11 @@ namespace WindowsFormsApp2
             Nametb.Text = MemberSDGV.SelectedRows[0].Cells[1].Value.ToString();
             phonetb.Text = MemberSDGV.SelectedRows[0].Cells[2].Value.ToString();
             Gendercb.Text = MemberSDGV.SelectedRows[0].Cells[3].Value.ToString();
-            Timingcb.Text = MemberSDGV.SelectedRows[0].Cells[4].Value.ToString();
-            Amnttb.Text = MemberSDGV.SelectedRows[0].Cells[5].Value.ToString();
             Agetb.Text = MemberSDGV.SelectedRows[0].Cells[6].Value.ToString();
+
+            Amnttb.Text = MemberSDGV.SelectedRows[0].Cells[5].Value.ToString();
+            Timingcb.Text = MemberSDGV.SelectedRows[0].Cells[4].Value.ToString();
+
 
 
         }
@@ -75,10 +77,14 @@ namespace WindowsFormsApp2
         {
             Nametb.Text = "";
             phonetb.Text = "";
-            Agetb.Text = "";
             Gendercb.Text = "";
-            Timingcb.Text = "";
+            Agetb.Text = "";
             Amnttb.Text = "";
+            Timingcb.Text = "";
+
+
+
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -120,9 +126,9 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (key == 0 || Nametb.Text== "" || phonetb.Text== "" || Agetb.Text== "" || Timingcb.Text== ""|| Gendercb.Text== "" || Amnttb.Text== "" )
+            if (key == 0 || Nametb.Text== "" || phonetb.Text== "" || Gendercb.Text== "" || Agetb.Text== ""|| Amnttb.Text== "" || Timingcb.Text == "")
             {
-                MessageBox.Show("Missing Information");
+                MessageBox.Show("Missing Information.");
 
             }
             else
@@ -130,21 +136,29 @@ namespace WindowsFormsApp2
                 try
                 {
                     con.Open();
-                    String query = "updatee Membertbl set MName = '" + Nametb.Text + "',MPhone = '" + phonetb.Text + "',MGen = '"+Gendercb.Text+"',MAge = '"+Agetb.Text + "',MAmount = '" +Amnttb.Text+"',MTiming ='"+Timingcb.Text+"'where MID = "+key+";";
+                    String query = "update Membertbl set MName = '" + Nametb.Text + "', MPhone= '" + phonetb.Text + "',MGen = '" + Gendercb.Text + "',MAge='" + Agetb.Text + "',MAmount = " + Amnttb.Text + ",MTiming= '" + Timingcb.Text + "'where MID="+key+";";  
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Member Deleted Succesfully");
+                    MessageBox.Show("Member updated succesfully");
                     con.Close();
+
                     populate();
 
 
                 }
                 catch (Exception ex)
                 {
+                    con.Close();
+
                     MessageBox.Show(ex.Message);
 
                 }
             }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
